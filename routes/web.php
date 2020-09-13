@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ShipOrderController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,4 +15,4 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::view('/', 'welcome');
-Route::get('/ship-order', 'ShipOrderController');
+Route::get('/ship-order', ShipOrderController::class);
